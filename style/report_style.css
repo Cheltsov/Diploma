@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0px;
+}
+#report{
+    text-decoration:underline;
+}
+#main{
+    text-decoration:none;
+}
+
+.men ul{
+    margin-top: 10px; margin-left: 10px;
+}
+.men li{
+    width:150px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+button{
+    width:100px;
+    height: 35px;
+}
+.men{
+    padding-top:80px;
+    width:15%;
+    border:1px solid red;
+    float:left;
+}
+#content{
+    padding-top:0px;
+    width: 83%;
+    border:1px solid blue;
+    float:right;
+    padding-left: 20px;
+}
+#content input{
+    margin-bottom: 10px;
+    height: 40px
+}
+

@@ -1,0 +1,26 @@
+/*
+$arr_infoCash = getTempCash();
+
+
+
+foreach($arr_infoCash as $item){
+
+
+
+    if($item->type_cash == '1'){
+       echo("<script>
+                    $('#hands').append('<button class=".'type'." id=".'cash_'."$item->id".">".$item->name.":".$item->balance."(".$item->type_money.")</button>');
+                </script>");
+    }
+    if($item->type_cash == '2'){
+        echo("<script>
+                    $('#cards').append('<button class=".'type'." id=".'cash_'."$item->id".">".$item->name.":".$item->balance."(".$item->type_money.")</button>');
+                </script>");
+    }
+    if($item->type_cash == '3'){
+        echo("<script>
+                    $('#banks').append('<button class=".'type'." id=".'cash_'."$item->id".">".$item->name.":".$item->balance."(".$item->type_money.")</button>');
+                </script>");
+    }
+
+}*/

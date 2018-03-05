@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/cellSelection.min.js"></script>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-bottom: 50px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #999;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* класс добавляемый к выделенным ячейкам */
+        td.jq-cell-selected {
+            background: #4b75a4 !important;
+            color: #ffffff;
+        }
+        td.busy {
+            background: #F2364E;
+            color: #fff;
+        }
+        .example_ignorecell tr td:nth-child(6),
+        .example_ignorecell tr td:nth-child(7) {
+            font-weight: bold;
+            color: #f00;
+        }
+        .panel_default button {
+            padding: 2px 5px;
+        }
+        .example {
+            margin-bottom: 15px;
+        }
+        .example_title {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        pre {
+            display: inline-block;
+            width: auto;
+            padding: 7px;
+            border: 1px solid #bcbcbc;
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <table class="example_data">
+        <tr>
+            <th colspan="7">Апрель 2016</th>
+        </tr>
+        <tr>
+            <td class="ignore">&nbsp;</td>
+            <td class="ignore">&nbsp;</td>
+            <td class="ignore">&nbsp;</td>
+            <td class="ignore">&nbsp;</td>
+            <td data-day="1" data-month="April">1</td>
+            <td data-day="2" data-month="April">2</td>
+            <td data-day="3" data-month="April">3</td>
+        </tr>
+        <tr>
+            <td data-day="4" data-month="April">4</td>
+            <td data-day="5" data-month="April">5</td>
+            <td data-day="6" data-month="April">6</td>
+            <td data-day="7" data-month="April">7</td>
+            <td data-day="8" data-month="April">8</td>
+            <td data-day="9" data-month="April">9</td>
+            <td data-day="10" data-month="April">10</td>
+        </tr>
+        <tr>
+            <td data-day="11" data-month="April">11</td>
+            <td data-day="12" data-month="April">12</td>
+            <td data-day="13" data-month="April">13</td>
+            <td data-day="14" data-month="April">14</td>
+            <td data-day="15" data-month="April">15</td>
+            <td data-day="16" data-month="April">16</td>
+            <td data-day="17" data-month="April">17</td>
+        </tr>
+        <tr>
+            <td data-day="18" data-month="April">18</td>
+            <td data-day="19" data-month="April">19</td>
+            <td data-day="20" data-month="April">20</td>
+            <td data-day="21" data-month="April">21</td>
+            <td data-day="22" data-month="April">22</td>
+            <td data-day="23" data-month="April">23</td>
+            <td data-day="24" data-month="April">24</td>
+        </tr>
+        <tr>
+            <td data-day="25" data-month="April">25</td>
+            <td data-day="26" data-month="April">26</td>
+            <td data-day="27" data-month="April">27</td>
+            <td data-day="28" data-month="April">28</td>
+            <td data-day="29" data-month="April">29</td>
+            <td data-day="30" data-month="April">30</td>
+            <td class="ignore weekend">&nbsp;</td>
+        </tr>
+    </table>
+    <p class="panel_data">
+        <button class="select-all">selectAll</button>
+        <button class="deselect">deselect</button>
+        <button class="getArray">getArray (см. в консоли)</button>
+        <button class="getJson">getJson (см. в консоли)</button>
+    </p>
+
+    <script>
+        $(function(){
+            /* -- default -- */
+            var csd = $('.example_default').cellSelection();
+            $('.panel_default .select-all').on('click', function() {
+                csd.cellSelection('selectAll');
+            });
+            $('.panel_default .deselect').on('click', function() {
+                csd.cellSelection('deselect');
+            });
+           /* $('.panel_default .getArray').on('click', function() {
+                var arr = csd.cellSelection('getArray');
+                console.log(arr);
+            });
+            $('.panel_default .getJson').on('click', function() {
+                var json = csd.cellSelection('getJson');
+                console.log(json);
+            });
+             //-- ignore cells --
+            var csi = $('.example_ignorecell').cellSelection({
+                ignoreCell: '.ignore'
+            });
+            $('.panel_ignore .select-all').on('click', function() {
+                csi.cellSelection('selectAll');
+            });
+            $('.panel_ignore .deselect').on('click', function() {
+                csi.cellSelection('deselect');
+            });
+            $('.panel_ignore .getArray').on('click', function() {
+                var arr = csi.cellSelection('getArray');
+                console.log(arr);
+            });
+            $('.panel_ignore .getJson').on('click', function() {
+                var json = csi.cellSelection('getJson');
+                console.log(json);
+            });*/
+            // -- data-attribute --
+            var csda = $('.example_data').cellSelection({
+                ignoreCell: '.ignore'
+            });
+            $('.panel_data .select-all').on('click', function() {
+                csda.cellSelection('selectAll');
+            });
+            $('.panel_data .deselect').on('click', function() {
+                csda.cellSelection('deselect');
+            });
+            $('.panel_data .getArray').on('click', function() {
+                var arr = csda.cellSelection('getArray', 'data');
+                console.log(arr);
+            });
+            $('.panel_data .getJson').on('click', function() {
+                var json = csda.cellSelection('getJson', 'data');
+                console.log(json);
+            });
+        });
+    </script>
+</body>
+</html>

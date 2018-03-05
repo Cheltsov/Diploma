@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful Multifunctional Calendar Plugin For jQuery - PIGNOSE Calender</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+
+    <link rel="stylesheet" href="./node_modules/pg-calendar/dist/css/pignose.calendar.css">
+    <script src="./node_modules/pg-calendar/dist/js/pignose.calendar.full.js"></script>
+
+</head>
+<body>
+
+    <div class="calender" ></div>
+
+    <script>
+       //$('.calender').pignoseCalendar();
+
+
+
+        $('.calender').pignoseCalendar({
+
+            // en, ko, fr, ch, de, jp, pt, fr
+            lang: 'ru',
+
+            // You can change auto initialized date at first.
+            date: moment(),
+
+            // light, dark
+            theme: 'light',
+
+            // date format
+            format: 'YYYY-MM-DD',
+
+            click: function(event, context) {
+
+                    // This is clicked button Element.
+                var $this = $(this);
+
+                // You can access event parameter.
+                event.preventDefault();
+
+                // You can get target element in `context` variable, This element is same `$(this)`.
+                var $element = context.element;
+
+                // You can also get calendar element, It is calendar view DOM.
+                var $calendar = context.calendar;
+
+                alert( $calendar);
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

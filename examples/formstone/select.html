@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/dropdown.css"/>
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<script src="js/core.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/dropdown.js"></script>
+
+<style>
+.fs-dropdown-bottom .fs-dropdown-options {
+		  	bottom:auto !important;
+		  }
+		  
+		  
+		  .fs-dropdown { max-width: 500px; }
+.fs-dropdown-selected { border-width: 1px; }
+.fs-dropdown-options { border-width: 0 2px 2px; padding: 1%; }
+.fs-dropdown-item { border-radius: 3px !important; border: none; margin: 0 0 1%; }
+
+.fs-dropdown-item:hover {
+	background: none repeat scroll 0% 0% #EEE !important;
+}
+</style>
+
+
+
+<script>
+	
+	jQuery("document").ready(function($) {
+		
+		$('select').dropdown({
+			label:"Выберите элемент",
+			//links:true
+		});
+		
+		//$('select').dropdown('open');
+		$('select').dropdown('disable',2);
+		$('select').dropdown('enable',2);
+		
+		/*$('select').on('change',function() {
+			
+			alert('Выбран новый элемент');
+			
+		})*/
+		
+	});
+	
+</script>
+
+<title>Выпадающие списки</title>
+</head>
+<body>
+
+<div class="wrap">
+	<h1>Выпадающий список!!!</h1>
+	<select>
+		<option  value="1">Меню 1</option>
+		<option  value="2">Меню 2</option>
+		<option  value="3">Меню 3</option>
+	</select>	
+</div>
+
+</body>
+</html><u></u>

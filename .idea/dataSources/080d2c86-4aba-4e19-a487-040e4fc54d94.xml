@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ledger1@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ledger1">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="howdytest"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="journal"/>
+    <schema id="6" parent="1" name="krushinin"/>
+    <schema id="7" parent="1" name="ledger"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="performance_schema"/>
+    <schema id="10" parent="1" name="phpmyadmin"/>
+    <schema id="11" parent="1" name="security_autoriz"/>
+    <schema id="12" parent="1" name="security_autoriz_db"/>
+    <schema id="13" parent="1" name="test"/>
+    <schema id="14" parent="1" name="test_null"/>
+    <schema id="15" parent="1" name="lisenme"/>
+    <schema id="16" parent="1" name="my_bd"/>
+    <table id="17" parent="2" name="cash"/>
+    <table id="18" parent="2" name="translate"/>
+    <table id="19" parent="2" name="tranzaction"/>
+    <table id="20" parent="2" name="users"/>
+    <column id="21" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="17" name="iduser">
+      <Position>2</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="23" parent="17" name="name">
+      <Position>3</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="24" parent="17" name="type_money">
+      <Position>4</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="type_cash">
+      <Position>5</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="26" parent="17" name="balance">
+      <Position>6</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="27" parent="17" name="comment">
+      <Position>7</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="28" parent="17" name="date_create">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="29" parent="17" name="date_update">
+      <Position>9</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="30" parent="17" name="num_card">
+      <Position>10</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <key id="31" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="18" name="name">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="34" parent="18" name="data">
+      <Position>3</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="35" parent="18" name="cash_min">
+      <Position>4</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="36" parent="18" name="balance_min">
+      <Position>5</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="37" parent="18" name="course">
+      <Position>6</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="38" parent="18" name="cash_sum">
+      <Position>7</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="39" parent="18" name="balance_sum">
+      <Position>8</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="40" parent="18" name="comment">
+      <Position>9</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="41" parent="18" name="id_user">
+      <Position>10</Position>
+      <DataType>tinyint(1) unsigned|0</DataType>
+    </column>
+    <key id="42" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="19" name="name">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="45" parent="19" name="cash">
+      <Position>3</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="46" parent="19" name="balance">
+      <Position>4</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="47" parent="19" name="comment">
+      <Position>5</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="48" parent="19" name="user_id">
+      <Position>6</Position>
+      <DataType>int(11) unsigned|0</DataType>
+    </column>
+    <column id="49" parent="19" name="data">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="50" parent="19" name="status">
+      <Position>8</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <index id="51" parent="19" name="index_foreignkey_tranzaction_user">
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="52" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(11) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="54" parent="20" name="login">
+      <Position>2</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="55" parent="20" name="email">
+      <Position>3</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="56" parent="20" name="password">
+      <Position>4</Position>
+      <DataType>varchar(191)|0</DataType>
+    </column>
+    <column id="57" parent="20" name="date">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <key id="58" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

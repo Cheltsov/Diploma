@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+	<script src="libs/formstone/dist/js/swap.js"></script>
+
+	<script src="libs/jquery-1.7.2.min.js"></script>
+
+
+
+
+	<script src="libs/formstone/dist/js/core.js"></script>
+
+	<script src="libs/formstone/dist/js/mediaquery.js"></script>
+
+
+
+
+    <link href="libs/formstone/dist/css/number.css" rel="stylesheet">
+	<script src="libs/formstone/dist/js/number.js"></script>
+
+	<link href="libs/formstone/dist/css/tooltip.css" rel="stylesheet">
+	<script src="libs/formstone/dist/js/tooltip.js"></script>
+
+	<script src="libs/formstone/dist/js/checkbox.js"></script>
+	<link href="libs/formstone/dist/css/checkbox.css" rel="stylesheet">
+
+
+
+
+
+
+
+<script>
+	$("input[type='number']").number();
+
+	$(".tooltip").tooltip({
+	  direction: "right"
+	});
+
+
+$(".swap").swap();
+
+$(".target").swap();
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<input type="number" name="number" pattern="[0-9]*" onclick="func()">
+
+<h2 class="swap" data-swap-target=".swap_target">Handle</h2>
+<div class="swap_target">Content</div>
+
+<div class="target" data-swap-target=".toggle">Toggle</div>
+<div class="toggle">Target</div>
+
+
+<h4>Grouped</h4>
+<div class="target" data-swap-target=".toggle_1" data-swap-group="group_1">Toggle - 1</div>
+<div class="target" data-swap-target=".toggle_2" data-swap-group="group_1">Toggle - 2</div>
+
+<div class="toggle_1">Target - 1</div>
+<div class="toggle_2">Target - 2</div>
+
+
+
+<script>
+	function func(){
+		alert($("input[type='number']").text());
+	}
+
+</script>
+
+</body>
+</html>

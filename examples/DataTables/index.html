@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+</head>
+<body>
+<table id="example" class="display responsive nowrap" style="width:60%">
+    <thead>
+    <tr>
+        <th class="site_name">Название</th>
+        <th>Адрес</th>
+        <th>Тип</th>
+        <th>Последние изменения</th>
+    </tr>
+    </thead>
+</table>
+
+
+<script>
+    $("#example").dataTable({
+
+        "aaData":[
+            ["htmlhook.ru","https://htmlhook.ru/","Блог","2013-10-15 10:30:00"],
+            ["Новый путь","http://www.phppath.ru/","Блог","2013-09-15 09:20:00"],
+            ["Портал UA","http://pixelcom.at.ua/","Интернет магазин","null"],
+        ],
+        "aoColumnDefs":[{
+            "sTitle":"Название сайта"
+            , "aTargets": [ "site_name" ]
+        },{
+            "aTargets": [ 1 ]
+            , "bSortable": false
+            , "mRender": function ( url, type, full )  {
+                return  '<a href="'+url+'">' + url + '</a>';
+            }
+        },{
+            "aTargets":[ 3 ]
+            , "sType": "date"
+            , "mRender": function(date, type, full) {
+                return (full[2] == "Блог")
+                    ? new Date(date).toDateString()
+                    : "N/A" ;
+            }
+        }],
+
+        language: {
+            "processing": "Подождите...",
+            "search": "Поиск:",
+            "lengthMenu": "Показать _MENU_ записей",
+            "info": "Записи с _START_ до _END_ из _TOTAL_ записей",
+            "infoEmpty": "Записи с 0 до 0 из 0 записей",
+            "infoFiltered": "(отфильтровано из _MAX_ записей)",
+            "infoPostFix": "",
+            "loadingRecords": "Загрузка записей...",
+            "zeroRecords": "Записи отсутствуют.",
+            "emptyTable": "В таблице отсутствуют данные",
+            "paginate": {
+                "first": "Первая",
+                "previous": "Предыдущая",
+                "next": "Следующая",
+                "last": "Последняя"
+            },
+            "aria": {
+                "sortAscending": ": активировать для сортировки столбца по возрастанию",
+                "sortDescending": ": активировать для сортировки столбца по убыванию"
+            }
+        }
+    });
+</script>
+</body>
+</html>

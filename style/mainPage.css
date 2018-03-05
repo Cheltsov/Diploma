@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+	margin:0;
+	padding:0;
+}
+.display_one{
+	height: 100%;
+	width:100%;
+	background: url(../im/picture1.jpg) no-repeat center fixed;
+	background-size:cover;
+}
+
+.header{
+	width:100%;
+	border:1px solid transparent;
+	height: 63px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.9);
+	/*display: flex;
+	align-content: center;*/
+
+	padding-left:90px;
+	position: fixed;
+	top:0;
+}
+.header img{
+	float:left;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-left:15px;
+}
+.header ul{
+	margin-top: 20px;
+	font-size: 13pt;
+}
+.header li{
+	float: left;
+	margin: 0 20px;
+	font-family: 'Roboto';
+}
+
+.header a{
+	color:white;
+	text-decoration:none;
+}
+.header a:hover{
+	text-decoration: underline;
+}
+#main{
+	text-decoration: underline;
+}
+
+
+.auto_form1{
+	float: right;
+	/*border:1px solid red;*/
+	margin-right: 10px;
+}
+
+
+#aut_reg{
+	float:right;
+	margin-right: 90px;
+}
+#reg{
+	font-size: 13pt;
+	border:none;
+	color:white;
+	background-color: transparent;
+	margin-right: 10px;
+}
+#reg:hover{
+	text-decoration: underline;
+}
+
+#but_auto{
+	border:none;
+	color:white;
+	font-size: 13pt;
+	background-color: transparent;
+
+}
+#but_auto:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diaolog - jQuery UI</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<button id="but">Add</button>
+        <div id="dialog">
+            <form action="">
+                <input type="text"><br>
+                <input type="text"><br>
+                <input type="submit" value="Sent">
+            </form>
+        </div>
+
+
+        <script>
+
+            $("#but").click(function(){
+                $('#dialog').dialog('open');
+            });
+
+            $('#dialog').dialog({
+                autoOpen: false,
+                show: {
+                    effect: 'drop',
+                    duration: 500
+                },
+                hide: {
+                    effect: 'clip',
+                    duration: 500
+                }
+            });
+
+        </script>
+</body>
+</html>

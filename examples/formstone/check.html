@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/checkbox.css"/>
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<script src="js/core.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/checkbox.js"></script>
+
+
+<title>Чекбоксы и радиокнопки</title>
+
+<style>
+	.fs-checkbox-toggle .fs-checkbox-marker {
+		
+		width:200px !important;
+	}
+
+</style>
+
+<script>
+	
+	jQuery("document").ready(function($) {
+		
+		$("input[type=checkbox]").checkbox({
+			
+			//customClass:'myclass',
+			//toggle:true,
+			/*labels: {
+				on:'Включить',
+				off:'Выключить'
+			}*/
+			
+		});
+		
+		$("input[type=checkbox]").checkbox('enable');
+		
+	});
+	
+</script>
+
+
+</head>
+<body>
+
+<div class="wrap">
+
+	<h1>Чекбокс!!!</h1>
+	
+	<label for="id1" >Чекбокс 1</label>
+		<input type="checkbox" name="check1" id="id1" value="1" />
+	
+	<label for="id2" >Чекбокс 2</label>
+		<input type="checkbox" name="check2" id="id2" value="2" />
+	<label for="id3" >Чекбокс 3</label>
+		<input type="checkbox" name="check3" id="id3" value="3" />
+	<label for="id4" >Чекбокс 4</label>
+		<input type="checkbox" name="check4" id="id4" value="4" />
+		
+	<h1>Радио!!!</h1>	
+	<label for="id5" >Радио 1</label>
+		<input type="radio" name="radio" id="id5" value="1" />
+	<label for="id6" >Радио 2</label>
+		<input type="radio" name="radio" id="id6" value="2" />
+	<label for="id7" >Радио 3</label>
+		<input type="radio" name="radio" id="id7" value="3" />
+	<label for="id8" >Радио 4</label>
+		<input type="radio" name="radio" id="id8" value="4" />
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+<head>
+    <title>example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <style type="text/css">
+        body { font-size:.9em; }
+        h2 { cursor:pointer; }
+    </style>
+    <script type="text/javascript">
+
+
+        $(function(){
+            // меню
+            $("#menu h2").click(function() {
+                $(this).next().toggle();
+                return false;
+            }).next().slow();
+            // открываем все
+            $("a.open").click(function(){
+                $("#menu ul").show("slow");
+            });
+            // закрываем все
+            $("a.close").click(function(){
+                $("#menu ul").hide("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<a class="open" href="#">Open all</a> | <a class="close" href="#">Close all</a>
+<div id="menu">
+    <h2 id="egypt">Египет</h2>
+    <ul>
+        <li><a href="?alexandria">Александрия</a></li>
+        <li><a href="?cairo">Каир</a></li>
+        <li><a href="?luxor">Луксор</a></li>
+        <li><a href="?sharm-el-sheikh">Шарм-эль-Шейх</a></li>
+    </ul>
+    <h2 id="spain">Испания</h2>
+    <ul>
+        <li><a href="?barcelona">Барселона</a></li>
+        <li><a href="?las-palmas">Лас-Пальмас</a></li>
+        <li><a href="?madrid">Мадрид</a></li>
+        <li><a href="?santa-cruz">Санта-Круз</a></li>
+        <li><a href="?sevilla">Севилья</a></li>
+    </ul>
+    <h2 id="italy">Италия</h2>
+    <ul>
+        <li><a href="?venezia">Венеция</a></li>
+        <li><a href="?milano">Милан</a></li>
+        <li><a href="?napoli">Неаполь</a></li>
+        <li><a href="?roma">Рим</a></li>
+        <li><a href="?florentia">Флоренция</a></li>
+    </ul>
+</div>
+</body>
+</html>

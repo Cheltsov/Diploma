@@ -6,7 +6,7 @@ if(!isset($_SESSION)){
 require '../config/config_connect_DB.php';
 require 'libs/rb.php';
 require 'moveTo.php';
-
+require '../models/LineChart.php';
 
 
 
@@ -787,9 +787,9 @@ class Datebase
 
    function getAllBalanceOfData($id_user, $status){
        $arr_tmp = array();
-       $tr = R::getAll("select name, date(data) as data, balance from tranzaction  where  user_id = $id_user and status = '$status' group by data ");
+       $tr = R::getAll("select name, date(data) as data, sum(balance) as balance from tranzaction  where  user_id = $id_user and status = '$status' group by date(data)");
        foreach($tr as $item){
-           array_push($arr_tmp, $item['name'], $item['data'], $item['balance']);
+           array_push($arr_tmp, new LineChart($item["name"], $item["data"],$item["balance"]));
        }
        return $arr_tmp;
    }

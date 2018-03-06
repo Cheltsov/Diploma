@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="587421d6-895c-4b11-bb89-b090750059ed" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/report.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controlers/control_report.php" afterPath="$PROJECT_DIR$/controlers/control_report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/report.php" afterPath="$PROJECT_DIR$/views/report.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,15 +39,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controlers/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="786" column="0" lean-forward="true" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
+            <state relative-caret-position="586">
+              <caret line="801" column="2" lean-forward="true" selection-start-line="801" selection-start-column="2" selection-end-line="801" selection-end-column="2" />
               <folding>
-                <marker date="1520239498085" expanded="true" signature="11505:11823" ph="..." />
-                <marker date="1520239498085" expanded="true" signature="11623:11757" ph="..." />
-                <marker date="1520239498085" expanded="true" signature="23127:23479" ph="..." />
+                <marker date="1520292143323" expanded="true" signature="11539:11857" ph="..." />
+                <marker date="1520292143323" expanded="true" signature="11657:11791" ph="..." />
+                <marker date="1520292143323" expanded="true" signature="23161:23513" ph="..." />
               </folding>
             </state>
           </provider>
@@ -54,18 +56,18 @@
       <file leaf-file-name="control_report.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlers/control_report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="714">
+              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="report.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/report.js">
+      <file leaf-file-name="report.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/report.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+            <state relative-caret-position="376">
+              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -123,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/examples/formstone/check.html" />
         <option value="$PROJECT_DIR$/examples/formstone/css/style.css" />
         <option value="$PROJECT_DIR$/examples/formstone/index.php" />
         <option value="$PROJECT_DIR$/examples/jstophp/config.php" />
@@ -161,7 +162,6 @@
         <option value="$PROJECT_DIR$/style/report_style.css" />
         <option value="$PROJECT_DIR$/examples/Charts/index.html" />
         <option value="$PROJECT_DIR$/js/report.js" />
-        <option value="$PROJECT_DIR$/controlers/control_report.php" />
         <option value="$PROJECT_DIR$/controlers/control_cash.php" />
         <option value="$PROJECT_DIR$/controlers/control_tranzactions.php" />
         <option value="$PROJECT_DIR$/js/cash.js" />
@@ -172,8 +172,10 @@
         <option value="$PROJECT_DIR$/views/tranzactions.php" />
         <option value="$PROJECT_DIR$/js/tranz.js" />
         <option value="$PROJECT_DIR$/examples/mainCalendar/index.html" />
-        <option value="$PROJECT_DIR$/views/report.php" />
+        <option value="$PROJECT_DIR$/controlers/control_report.php" />
+        <option value="$PROJECT_DIR$/models/LineChart.php" />
         <option value="$PROJECT_DIR$/controlers/db.php" />
+        <option value="$PROJECT_DIR$/views/report.php" />
       </list>
     </option>
   </component>
@@ -190,7 +192,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="177" />
+    <option name="y" value="-8" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -369,12 +372,12 @@
       <workItem from="1519819218477" duration="5918000" />
       <workItem from="1520083331349" duration="14662000" />
       <workItem from="1520238965264" duration="3471000" />
-      <workItem from="1520278305275" duration="9543000" />
+      <workItem from="1520278305275" duration="16235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334433000" />
+    <option name="totallyTimeSpent" value="341125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,13 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/courses/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config_course.php" />
     <entry file="file://$PROJECT_DIR$/examples/cellSelection/js/cellSelection.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -759,6 +755,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/control_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/LineChart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/6f10b568/080d2c86-4aba-4e19-a487-040e4fc54d94/ledger1.tranzaction">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -766,41 +786,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="786" column="0" lean-forward="true" selection-start-line="786" selection-start-column="0" selection-end-line="786" selection-end-column="0" />
-          <folding>
-            <marker date="1520239498085" expanded="true" signature="11505:11823" ph="..." />
-            <marker date="1520239498085" expanded="true" signature="11623:11757" ph="..." />
-            <marker date="1520239498085" expanded="true" signature="23127:23479" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/report.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758">
-          <caret line="59" column="34" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="376">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlers/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="801" column="2" lean-forward="true" selection-start-line="801" selection-start-column="2" selection-end-line="801" selection-end-column="2" />
           <folding>
-            <element signature="e#862#929#0#HTML" expanded="true" />
+            <marker date="1520292143323" expanded="true" signature="11539:11857" ph="..." />
+            <marker date="1520292143323" expanded="true" signature="11657:11791" ph="..." />
+            <marker date="1520292143323" expanded="true" signature="23161:23513" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlers/control_report.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

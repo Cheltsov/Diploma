@@ -34,13 +34,13 @@ if(isset($_POST['wanna_info_tr_min'])){
     $id_cur_user = $con->findIdUser();
     $data_tr_min = $con->getDataOfTr_Sum($id_cur_user); // получить даты транзакций плюс
     $datas = $con->getAllBalanceOfData( $id_cur_user, "minus");
-    for($i=1,$n=2;$i<count($datas);$i+=3,$n+=3){
+   /* for($i=1,$n=2;$i<count($datas);$i+=3,$n+=3){
         for($j=1;$j<count($datas);$j+=3){
             if($datas[$i] == $datas[$j]){
                 $rez_1 .= $datas[$n]."|";
             }
         }
-    }
+    }*/
     //print_r($datas);
     //echo($rez_1);
     echo (json_encode($datas));
